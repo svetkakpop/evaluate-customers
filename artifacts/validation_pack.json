@@ -1,0 +1,55 @@
+{
+ "eval_anchor": 378,
+ "train_anchors": [
+  155,
+  169,
+  183,
+  197,
+  211,
+  225,
+  239,
+  253,
+  267,
+  281,
+  295,
+  309,
+  323,
+  337
+ ],
+ "excluded": [
+  351,
+  365
+ ],
+ "weights": [
+  0.5,
+  0.5,
+  0.5,
+  0.5,
+  0.5,
+  0.5,
+  0.5,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "basis_core": [
+  "ranksonly",
+  "tweedie",
+  "tweedie_sub",
+  "nd_plain"
+ ],
+ "basis_ext": [
+  "ranksonly",
+  "tweedie",
+  "tweedie_sub",
+  "nd_plain",
+  "mlp",
+  "mlp2"
+ ],
+ "base_rounds": 250,
+ "base_purge": 42
+}

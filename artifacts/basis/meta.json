@@ -1,0 +1,71 @@
+{
+ "directions": [
+  "ranksonly",
+  "tweedie",
+  "tweedie_sub",
+  "mlp",
+  "mlp2",
+  "nd_plain"
+ ],
+ "levels": {
+  "ranksonly": "A",
+  "tweedie": "A",
+  "tweedie_sub": "A",
+  "nd_plain": "A",
+  "mlp": "B",
+  "mlp2": "B"
+ },
+ "shift_free": {
+  "ranksonly": 1.6733109516945617,
+  "tweedie": 1.763005502266462,
+  "tweedie_sub": 1.762757129257468,
+  "mlp": 1.6740912388805873,
+  "mlp2": 1.6744445069533107,
+  "nd_plain": 1.6700120339879978
+ },
+ "hold_anchor": 378,
+ "train_anchors": [
+  43,
+  57,
+  71,
+  85,
+  99,
+  113,
+  127,
+  141,
+  155,
+  169,
+  183,
+  197,
+  211,
+  225,
+  239,
+  253,
+  267,
+  281,
+  295,
+  309,
+  323,
+  337
+ ],
+ "rounds": {
+  "ranksonly": 250,
+  "tweedie": 300,
+  "tweedie_sub": 300,
+  "nd_plain": 565
+ },
+ "core": [
+  "ranksonly",
+  "tweedie",
+  "tweedie_sub",
+  "nd_plain"
+ ],
+ "extended": [
+  "ranksonly",
+  "tweedie",
+  "tweedie_sub",
+  "nd_plain",
+  "mlp",
+  "mlp2"
+ ]
+}

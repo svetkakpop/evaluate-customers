@@ -1,0 +1,9 @@
+data/train.parquet
+data/features/
+# data/*.npz и artifacts/*.pt лежат в git через LFS, см. .gitattributes
+data/*.log
+__pycache__/
+submissions/probes/
+submissions/submission_stage12.csv
+submissions/submission_final.csv
+submissions/base_deploy.csv

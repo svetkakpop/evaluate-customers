@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" role="img"
+     aria-label="Два направления из общего начала. Сквозная модель уходит дальше вдоль того, что база уже предсказывает, её проекция на остаток базы равна 0.0167. Остаточная модель короче, но её проекция равна 0.0249.">
+  <defs>
+    <marker id="tipN" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0,0 10,5 0,10" fill="#A79FAC"/>
+    </marker>
+    <marker id="tipA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0,0 10,5 0,10" fill="#F2708F"/>
+    </marker>
+  </defs>
+
+  <!-- оси -->
+  <g stroke="#4A4550" fill="none" stroke-width="1">
+    <line x1="110" y1="340" x2="700" y2="340"/>
+    <line x1="110" y1="340" x2="110" y2="86"/>
+  </g>
+  <g fill="#948C99" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">
+    <text x="700" y="362" text-anchor="end">то, что база уже предсказывает — эта составляющая MSE не меняет</text>
+    <text x="110" y="72">остаток базы T − m — только эта составляющая уменьшает MSE</text>
+  </g>
+
+  <!-- сквозная модель -->
+  <g stroke="#A79FAC" fill="none" stroke-width="2">
+    <line x1="110" y1="340" x2="540" y2="273" marker-end="url(#tipN)"/>
+  </g>
+  <g stroke="#A79FAC" stroke-dasharray="4 4" stroke-width="1" fill="none" opacity="0.6">
+    <line x1="540" y1="273" x2="110" y2="273"/>
+    <line x1="540" y1="273" x2="540" y2="340"/>
+  </g>
+  <g fill="#A79FAC" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13.5">
+    <text x="550" y="269">сквозная сеть, обучена на LTV</text>
+  </g>
+  <g fill="#948C99" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">
+    <text x="550" y="288">соло RMSLE 1.6755</text>
+    <text x="118" y="291">ρ = 0.0167</text>
+  </g>
+
+  <!-- остаточная модель -->
+  <g stroke="#F2708F" fill="none" stroke-width="2.5">
+    <line x1="110" y1="340" x2="400" y2="236" marker-end="url(#tipA)"/>
+  </g>
+  <g stroke="#F2708F" stroke-dasharray="4 4" stroke-width="1" fill="none" opacity="0.7">
+    <line x1="400" y1="236" x2="110" y2="236"/>
+    <line x1="400" y1="236" x2="400" y2="340"/>
+  </g>
+  <g fill="#F2708F" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13.5" font-weight="600">
+    <text x="408" y="232">та же сеть, обучена на остатке r = z − p_oof</text>
+  </g>
+  <g fill="#F2708F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">
+    <text x="408" y="251">соло RMSLE 1.6821</text>
+    <text x="118" y="228">ρ = 0.0249</text>
+  </g>
+
+  <!-- подпись внизу -->
+  <g fill="#948C99" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="12.5">
+    <text x="110" y="392">длина стрелки — качество модели самой по себе, высота — её вклад в ΔMSE</text>
+  </g>
+</svg>
